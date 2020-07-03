@@ -1,0 +1,302 @@
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+
+/* flexbox - uma tecnologia, uma maneira, uma coisa, uma forma de montar layouts sem uso de float - sem usar display inline - block  - inline-block - USEM SEM DÓ
+Para usar flex precisamos aplicar a propriedade FLEX ao elemento pai dos containers que desejamos posicionar
+Por padrão os elementos ficarão um ao lado do outro -
+flex-direction: row;
+justify-content: space-between; faz o alinhamento dos elementos pelas extremidades, no nosso exemplo como temos apenas 2 containers - o 1o. ficará à esquerda e o 2o. ficará à direita
+align-items: center; - alinhamento vertical
+
+
+*/
+
+
+/* elemento que receberá os containers de logo e menu */
+
+.principal {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(228, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* área do logotipo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-imagem {
+    font-size: 30px;
+    color: #00acee;
+    width: 100px;
+    height: 100px;
+}
+
+.logo-texto {
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: white;
+    font-style: unset;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 10px;
+    font-weight: 100;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.menu a:hover {
+    color: #575758c7;
+}
+
+.enunciado {
+    margin-top: 10px;
+    height: 50px;
+    width: 1200px;
+    text-align: center;
+    /* border: 1px solid white; */
+    background-color: white;
+    margin-left: 80px;
+}
+
+.enunciado-menu {
+    list-style: none;
+    padding: 15px;
+}
+
+.enunciado-menu li {
+    display: inline;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.enunciado-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.enunciado-menu a:hover {
+    color: #575758c7;
+}
+
+.destaque {
+    height: 400px;
+    width: 1050px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+
+.destaque img {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.topic {
+    height: 650px;
+    width: 230px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+}
+
+.topic a {
+    text-decoration: none;
+    text-align: justify;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(97, 92, 92, 0.3);
+    color: black;
+    display: block;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.topic ul {
+    margin: 15px;
+}
+
+.topic li {
+    margin: 15px;
+    font-weight: 800;
+    color: red;
+}
+
+.filtro a {
+    padding: 4px;
+    height: 30px;
+    width: 70px;
+    background: rgb(228, 65, 65);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: arial;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.contato {
+    /* border: 1px solid black; */
+    width: 1308px;
+    height: 250px;
+    margin: 875px 0;
+    background-color: rgb(228, 65, 65);
+    color: white;
+}
+
+.line1 {
+    margin: 10px 25px 10px 25px;
+    border: 1px solid rgb(146, 145, 145);
+    height: 420px;
+}
+
+.line1 img {
+    height: 200px;
+    width: 300px;
+}
+
+.line1 p {
+    margin: 10px;
+}
+
+.line1 a {
+    text-align: center;
+    float: right;
+    text-decoration: none;
+}
+
+.valor {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 300px;
+    color: white;
+    background-color: rgb(228, 65, 65);
+    border-radius: 1px;
+    font-weight: 550;
+    padding: 6px;
+}
+
+.container-line1 {
+    width: 100%;
+    height: 433px;
+    display: inline-flex;
+    /* border: 1px solid black; */
+}
+
+.container-line2 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 433px;
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.container-prime {
+    display: flex;
+}
+
+.container-line3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 433px;
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+.contato a {
+    text-align: center;
+    text-decoration-color: rgb(228, 65, 65);
+    margin-top: 45px;
+    color: white;
+    font-weight: 100;
+}
+
+.contato a:hover {
+    color: rgb(146, 145, 145);
+}
+
+.contato h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.contato ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.contato li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+    margin-left: 225px;
+    margin-top: 25px;
+}
+
+.logo-contato {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-contact {
+    display: inline-flex;
+}
